@@ -16,6 +16,10 @@
       {
         "command": "openhorizon.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "openHorizon.createService",
+        "title": "Create Open Horizon Service"
       }
     ]
   },

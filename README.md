@@ -28,5 +28,4 @@ For example if there is an image subfolder under your extension project workspac
 
 ## Requirements
 
-Open Horizon must be installed. A guide for [installing Open Horizon can be found here.](https://open-horizon.github.io/quick-start/)
-
+Open Horizon must be installed. A guide for [installing Open Horizon can be found here.](https://open-horizon.github.io/quick-start/) 
