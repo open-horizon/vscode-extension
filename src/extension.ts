@@ -3,18 +3,7 @@
 import * as vscode from 'vscode';
 
 function f1() {
-	{		
-		"type": "dark",
-		"colors": {
-		  "editor.background": "#1e1e1e",
-		  "editor.foreground": "#d4d4d4",
-		  "editorIndentGuide.background": "#404040",
-		  "editorRuler.foreground": "#333333",
-		  "activityBarBadge.background": "#007acc",
-		  "sideBarTitle.foreground": "#bbbbbb"
-		},
-		"tokenColors": "./Diner.tmTheme"
-	  }
+	
 }
 
 // This method is called when your extension is activated
