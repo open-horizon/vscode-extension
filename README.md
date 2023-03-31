@@ -7,6 +7,9 @@ This is an extension for VS Code to aid in the creation and deployment of Open H
 ### **Service creation wizard**
 A wizard that guides users through the process of creating a new Open Horizon service, including defining the service's metadata, dependencies, and deployment parameters.
 
+### **Policy creation wizard**
+Similar to service creation. Allows user to switch, import, export policies that keep track of config and environmental variables.
+
 ### **Service deployment and management**
 Tools and commands that allow users to deploy and manage their Open Horizon services directly from within VS Code, including starting and stopping services, monitoring service status, and managing service logs.
 

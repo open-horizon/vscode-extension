@@ -16,6 +16,10 @@
       {
         "command": "openHorizon.createService",
         "title": "Create Open Horizon Service"
+      },
+      {
+        "command": "openHorizon.createPolicy",
+        "title": "Create Open Horizon Policy"
       }
     ]
   },

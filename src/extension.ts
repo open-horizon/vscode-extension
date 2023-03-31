@@ -16,6 +16,11 @@ export function activate(context: vscode.ExtensionContext) {
             await createService();
         })
     );
+    context.subscriptions.push(
+        vscode.commands.registerCommand('openHorizon.createPolicy', async () => {
+            await createService();
+        })
+    );
 }
 
 // This method is called when your extension is deactivated
