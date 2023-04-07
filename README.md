@@ -65,3 +65,7 @@ For example if there is an image subfolder under your extension project workspac
 ## Requirements
 
 Open Horizon must be installed. A guide for [installing Open Horizon can be found here.](https://open-horizon.github.io/quick-start/) 
+
+## License
+
+This project is licensed under the [Apache 2.0 License](https://opensource.org/license/apache-2-0/). By using this extension, you agree to the terms and conditions of the license.
