@@ -33,6 +33,18 @@
         "command": "openHorizon.exportPolicy",
         "title": "Export Open Horizon Policy"
       }
+    ],
+    "configuration":[
+      {
+        "title": "openHorizon",
+        "properties": {
+          "openHorizon.currentPolicy": {
+            "type": ["string", "null"],
+            "default": null,
+            "description": "Specifies the file path of the currently selected policy file."
+          }
+        }
+      }
     ]
   },
   "scripts": {
