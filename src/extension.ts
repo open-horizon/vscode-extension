@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
             await createService();
         })
     );
-    const switchPolicy = vscode.commands.registerCommand('extension.switchPolicy', () => {
+    const switchPolicy = vscode.commands.registerCommand('openHorizon.switchPolicy', () => {
         vscode.window.showOpenDialog({ filters: { 'Policy Files': ['json'] } }).then(fileUri => {
           if (fileUri) {
             const policyPath = fileUri[0].fsPath;
@@ -39,7 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
         });
       });
     
-      const importPolicy = vscode.commands.registerCommand('extension.importPolicy', () => {
+      const importPolicy = vscode.commands.registerCommand('openHorizon.importPolicy', () => {
         vscode.window.showOpenDialog({ filters: { 'Policy Files': ['json'] } }).then(fileUri => {
           if (fileUri) {
             const policyPath = fileUri[0].fsPath;
@@ -63,7 +63,7 @@ export function activate(context: vscode.ExtensionContext) {
         });
       });
     
-      const exportPolicy = vscode.commands.registerCommand('extension.exportPolicy', () => {
+      const exportPolicy = vscode.commands.registerCommand('openHorizon.exportPolicy', () => {
         const currentPolicyPath = vscode.workspace.getConfiguration('openHorizon').get<string>('currentPolicy');
         if (currentPolicyPath) {
           vscode.window.showSaveDialog({ filters: { 'Policy Files': ['json'] } }).then(fileUri => {

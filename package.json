@@ -20,6 +20,18 @@
       {
         "command": "openHorizon.createPolicy",
         "title": "Create Open Horizon Policy"
+      },
+      {
+        "command": "openHorizon.switchPolicy",
+        "title": "Switch Open Horizon Policy"
+      },
+      {
+        "command": "openHorizon.importPolicy",
+        "title": "Import Open Horizon Policy"
+      },
+      {
+        "command": "openHorizon.exportPolicy",
+        "title": "Export Open Horizon Policy"
       }
     ]
   },
