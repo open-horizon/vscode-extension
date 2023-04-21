@@ -79,10 +79,45 @@ export function activate(context: vscode.ExtensionContext) {
           vscode.window.showErrorMessage('No current policy is set. Please switch to a policy before exporting.');
         }
       });
-    
+      let disposable = vscode.commands.registerCommand('extension.runPlaceholder', () => {
+        const placeholderLogic = new PlaceholderLogic();
+        placeholderLogic.execute();
+      });
+
+      context.subscriptions.push(disposable);
       context.subscriptions.push(switchPolicy);
       context.subscriptions.push(importPolicy);
       context.subscriptions.push(exportPolicy);
+}
+
+class PlaceholderLogic {
+  private data: Array<string> = [];
+
+  constructor() {
+      this.fillData();
+  }
+
+  fillData(): void {
+      for (let i = 0; i < 10; i++) {
+          this.data.push(`Item ${i}`);
+      }
+  }
+
+  execute(): void {
+      const result = this.processData();
+      vscode.window.showInformationMessage(`Processed Data: ${result.join(', ')}`);
+  }
+
+  processData(): Array<string> {
+      const processedData: Array<string> = [];
+
+      this.data.forEach((item) => {
+          const newItem = item.split('').reverse().join('');
+          processedData.push(newItem);
+      });
+
+      return processedData;
+  }
 }
 
 // This method is called when your extension is deactivated
