@@ -20,6 +20,30 @@
       {
         "command": "openHorizon.createPolicy",
         "title": "Create Open Horizon Policy"
+      },
+      {
+        "command": "openHorizon.switchPolicy",
+        "title": "Switch Open Horizon Policy"
+      },
+      {
+        "command": "openHorizon.importPolicy",
+        "title": "Import Open Horizon Policy"
+      },
+      {
+        "command": "openHorizon.exportPolicy",
+        "title": "Export Open Horizon Policy"
+      }
+    ],
+    "configuration":[
+      {
+        "title": "openHorizon",
+        "properties": {
+          "openHorizon.currentPolicy": {
+            "type": ["string", "null"],
+            "default": null,
+            "description": "Specifies the file path of the currently selected policy file."
+          }
+        }
       }
     ]
   },

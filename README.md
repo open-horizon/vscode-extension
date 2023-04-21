@@ -37,11 +37,10 @@ This feature allows you to export the currently active policy file to a differen
 
 The extension verifies if a policy file is valid before switching, importing, or exporting. The current implementation checks if the content is a valid JSON. You can add more validation logic based on your requirements.
 
-## **Features to be added**
-
 ### **Service creation wizard**
 A wizard that guides users through the process of creating a new Open Horizon service, including defining the service's metadata, dependencies, and deployment parameters.
 
+## **Features to be added**
 
 ### **Service deployment and management**
 Tools and commands that allow users to deploy and manage their Open Horizon services directly from within VS Code, including starting and stopping services, monitoring service status, and managing service logs.
